@@ -73,10 +73,53 @@ class ButtonGroup extends StatelessWidget {
                   Icons.delete,
                   size: 30,
                   color: Colors.red,
-                ))
+                )),
+
+            
+            GestureDetector(
+              onLongPress: (){
+                print('Taped on long press');
+              },
+              onDoubleTap: (){
+                print('Double tap');
+              },
+              onTap: (){
+                print('Taped on test');
+              },
+              child: Text('This is test text',
+              style: TextStyle(
+                fontSize: 50
+              ),
+              ),
+            ),
+
+
+            InkWell(
+              onTap: (){
+                print('On taped inkwell');
+              },
+              child: Text('This is test text 2',
+                style: TextStyle(
+                    fontSize: 50
+                ),
+              ),
+            ),
+
+
+
+
+            
+
           ],
         ),
       ),
+      floatingActionButton: FloatingActionButton(
+        backgroundColor: Colors.red,
+        foregroundColor: Colors.white,
+
+        onPressed: (){
+        print('Clicked on add');
+      }, child: Icon(Icons.add),),
     );
   }
 }
