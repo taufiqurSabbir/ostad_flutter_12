@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'home.dart';
 import 'module_10/Button_group.dart';
+import 'module_10/class_3.dart';
 import 'module_10/input_flutter.dart';
 
 class MyApp extends StatelessWidget{
@@ -10,7 +11,7 @@ class MyApp extends StatelessWidget{
   Widget build(BuildContext contex){
     return MaterialApp(
       title: 'Batch-12',
-      home: FlutterInput(),
+      home: Module10Class3(),
     );
   }
 }
