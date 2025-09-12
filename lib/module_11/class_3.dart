@@ -5,6 +5,7 @@ class Alert extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    Size screenSize = MediaQuery.of(context).size;
     showAlertDialog(){
 
       showDialog(context: context, builder: (context){
@@ -204,35 +205,65 @@ class Alert extends StatelessWidget {
         backgroundColor: Colors.red,
       ),
       body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            ElevatedButton(onPressed: () {
-              showAlertDialog();
-            }, child: Text('Alert Dialog')),
+        child: SingleChildScrollView(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Text('Text theme',
+              style: Theme.of(context).textTheme.bodyLarge,
+              ),
+              Container(
+                color: Colors.blue,
+                width: 200,
+                height: 200,
+              ),
+              SizedBox(height: 10,),
 
-            ElevatedButton(onPressed: () {
-              showAlertDialogWithIcon();
-            }, child: Text('Alert Dialog with icon')),
-            ElevatedButton(onPressed: () {
-              showSimpleDialog();
-            }, child: Text('Dialog with options')),
-            ElevatedButton(onPressed: () {
-              showBottomSheetAlert();
-            }, child: Text('Bottom sheet')),
-            ElevatedButton(onPressed: () {
-              showCustomDialog();
-            }, child: Text(' Dialog')),
-            ElevatedButton(onPressed: () {
-              showLoadingDialog();
-            }, child: Text(' Loading')),
-            ElevatedButton(onPressed: () {
-              showSnackBar();
-            }, child: Text(' Snackbar')),
-            ElevatedButton(onPressed: () {
-              showAlertDialogWithIcon2();
-            }, child: Text(' AlertDialog')),
-          ],
+              Container(
+                color: Colors.purple,
+                width: screenSize.width*0.5,
+                height: screenSize.height*0.2,
+              ),
+
+              Text('This is text',
+              style: TextStyle(
+                fontSize: screenSize.width > 600 ? 32 : 18
+              ),
+              ),
+          
+
+          
+              ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.blue,
+                  ),
+                  onPressed: () {
+                showAlertDialog();
+              }, child: Text('Alert Dialog')),
+          
+              ElevatedButton(onPressed: () {
+                showAlertDialogWithIcon();
+              }, child: Text('Alert Dialog with icon')),
+              ElevatedButton(onPressed: () {
+                showSimpleDialog();
+              }, child: Text('Dialog with options')),
+              ElevatedButton(onPressed: () {
+                showBottomSheetAlert();
+              }, child: Text('Bottom sheet')),
+              ElevatedButton(onPressed: () {
+                showCustomDialog();
+              }, child: Text(' Dialog')),
+              ElevatedButton(onPressed: () {
+                showLoadingDialog();
+              }, child: Text(' Loading')),
+              ElevatedButton(onPressed: () {
+                showSnackBar();
+              }, child: Text(' Snackbar')),
+              ElevatedButton(onPressed: () {
+                showAlertDialogWithIcon2();
+              }, child: Text(' AlertDialog')),
+            ],
+          ),
         ),
       ),
     );
