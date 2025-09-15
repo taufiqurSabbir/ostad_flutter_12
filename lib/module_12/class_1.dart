@@ -35,17 +35,26 @@ class Module12Class1 extends StatelessWidget {
 
               ),
               tabs: [
-            Tab(
-              icon: Icon(Icons.home),
-              text: 'Home',
+            SizedBox(
+              width: 150,
+              child: Tab(
+                icon: Icon(Icons.home),
+                text: 'Home',
+              ),
             ),
-            Tab(
-              icon: Icon(Icons.star),
-              text: 'Fav',
+            SizedBox(
+              width: 150,
+              child: Tab(
+                icon: Icon(Icons.star),
+                text: 'Fav',
+              ),
             ),
-            Tab(
-              icon: Icon(Icons.settings),
-              text: 'Setting',
+            SizedBox(
+              width: 150,
+              child: Tab(
+                icon: Icon(Icons.settings),
+                text: 'Setting',
+              ),
             ),
 
           ]),
