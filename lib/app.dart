@@ -7,7 +7,9 @@ import 'module_11/class_2.dart';
 import 'module_11/class_3.dart';
 import 'module_11/gridViewClass1.dart';
 import 'module_11/module_11_class_1.dart';
+import 'module_12/TravelHomeScreen.dart';
 import 'module_12/class_1.dart';
+import 'module_12/class_3.dart';
 
 class MyApp extends StatelessWidget {
   MyApp({super.key});
@@ -60,7 +62,14 @@ class MyApp extends StatelessWidget {
       darkTheme: ThemeData.dark(),
       themeMode: ThemeMode.system,
       title: 'Batch-12',
-      home: Module12Class1(),
+      home: Module11Stack(),
+      initialRoute: '/bottomNav',
+      routes: {
+        '/home' : (contex) => TravelHomeScreen(),
+        '/class1' : (contex) => Alert(),
+        '/class2' : (contex) => Module12Class1(),
+        '/bottomNav' : (contex) => BottomNav(),
+      },
     );
   }
 }

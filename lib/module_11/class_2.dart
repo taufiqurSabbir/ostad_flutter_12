@@ -107,8 +107,11 @@ class Module11Stack extends StatelessWidget {
             ),
             ElevatedButton(
                 onPressed: () {
-                  Navigator.push(
-                      context, MaterialPageRoute(builder: (context) => Test(name: 'Mehedi Hasan',)));
+
+                  Navigator.pushNamed(context, '/home');
+
+                  // Navigator.push(
+                  //     context, MaterialPageRoute(builder: (context) => Test(name: 'Mehedi Hasan',)));
 
                   // Navigator.pushReplacement(
                   //     context, MaterialPageRoute(builder: (context) => Test()));
