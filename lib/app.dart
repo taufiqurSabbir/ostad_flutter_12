@@ -10,6 +10,8 @@ import 'module_11/module_11_class_1.dart';
 import 'module_12/TravelHomeScreen.dart';
 import 'module_12/class_1.dart';
 import 'module_12/class_3.dart';
+import 'module_14/Expand_f.dart';
+import 'module_14/class_1.dart';
 
 class MyApp extends StatelessWidget {
   MyApp({super.key});
@@ -62,14 +64,14 @@ class MyApp extends StatelessWidget {
       darkTheme: ThemeData.dark(),
       themeMode: ThemeMode.system,
       title: 'Batch-12',
-      home: Module11Stack(),
-      initialRoute: '/bottomNav',
-      routes: {
-        '/home' : (contex) => TravelHomeScreen(),
-        '/class1' : (contex) => Alert(),
-        '/class2' : (contex) => Module12Class1(),
-        '/bottomNav' : (contex) => BottomNav(),
-      },
+      home: Expand_f(),
+      // initialRoute: '/bottomNav',
+      // routes: {
+      //   '/home' : (contex) => TravelHomeScreen(),
+      //   '/class1' : (contex) => Alert(),
+      //   '/class2' : (contex) => Module12Class1(),
+      //   '/bottomNav' : (contex) => BottomNav(),
+      // },
     );
   }
 }
