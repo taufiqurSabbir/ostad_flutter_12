@@ -3,6 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'module_14/Expand_f.dart';
 import 'module_14/class_1.dart';
 import 'module_14/class_2.dart';
+import 'module_14/class_3.dart';
 
 class MyApp extends StatelessWidget {
   MyApp({super.key});
@@ -16,6 +17,7 @@ class MyApp extends StatelessWidget {
 
       builder: (_, child) {
         return MaterialApp(
+          debugShowCheckedModeBanner: false,
           theme: ThemeData(
 
               brightness: Brightness.light,
@@ -62,7 +64,7 @@ class MyApp extends StatelessWidget {
           darkTheme: ThemeData.dark(),
           themeMode: ThemeMode.system,
           title: 'Batch-12',
-          home: ResPkg(),
+          home: TodoApp(),
           // initialRoute: '/bottomNav',
           // routes: {
           //   '/home' : (contex) => TravelHomeScreen(),
