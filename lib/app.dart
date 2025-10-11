@@ -5,7 +5,9 @@ import 'module_14/class_1.dart';
 import 'module_14/class_2.dart';
 import 'module_14/class_3.dart';
 import 'module_15/class_1.dart';
+import 'module_15/class_2.dart';
 import 'module_15/fav_btn.dart';
+import 'module_15/splashScreen.dart';
 
 class MyApp extends StatelessWidget {
   MyApp({super.key});
@@ -66,7 +68,7 @@ class MyApp extends StatelessWidget {
           darkTheme: ThemeData.dark(),
           themeMode: ThemeMode.system,
           title: 'Batch-12',
-          home: FavBtn(),
+          home: Splashscreen(),
           // initialRoute: '/bottomNav',
           // routes: {
           //   '/home' : (contex) => TravelHomeScreen(),
