@@ -9,6 +9,7 @@ import 'module_15/class_1.dart';
 import 'module_15/class_2.dart';
 import 'module_15/fav_btn.dart';
 import 'module_15/splashScreen.dart';
+import 'module_16/class_1.dart';
 
 class MyApp extends StatelessWidget {
   MyApp({super.key});
@@ -69,7 +70,7 @@ class MyApp extends StatelessWidget {
           darkTheme: ThemeData.dark(),
           themeMode: ThemeMode.system,
           title: 'Batch-12',
-          home: CalculatorApp(),
+          home: Class1API(),
           // initialRoute: '/bottomNav',
           // routes: {
           //   '/home' : (contex) => TravelHomeScreen(),
