@@ -4,9 +4,13 @@ import '../model/product_model.dart';
 
 class ProductCard extends StatelessWidget {
   final Data product;
+  final VoidCallback onDelete;
+  final VoidCallback onEdit;
   const ProductCard({
     super.key,
-    required this.product
+    required this.product,
+    required this.onDelete,
+    required this.onEdit
   });
 
   @override
@@ -36,13 +40,13 @@ class ProductCard extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 IconButton(
-                    onPressed: () {},
+                    onPressed: onEdit,
                     icon: Icon(
                       Icons.edit,
                       color: Colors.orange,
                     )),
                 IconButton(
-                    onPressed: () {},
+                    onPressed: onDelete,
                     icon: Icon(
                       Icons.delete,
                       color: Colors.red,
